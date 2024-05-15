@@ -12,6 +12,10 @@ kotlin {
 }
 
 dependencies {
+    // не понятно нужно или же нет
+    api ("com.fasterxml.jackson.module:jackson-module-kotlin:2.15.3")
+    api ("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.1")
+
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-mustache")
     implementation("org.springframework.boot:spring-boot-starter-web")

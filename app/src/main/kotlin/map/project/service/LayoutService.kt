@@ -13,7 +13,8 @@ class LayoutService(
 
     @PostConstruct
     fun f() {
-        Layout(points = listOf(Point(0.0, 0.0), Point(10.0, 10.0)))
-            .also { layoutRepository.save(it) }
+        val points = listOf(Point(0.0, 0.0), Point(10.0, 10.0))
+        val layout = Layout(points = points)
+        layoutRepository.save(layout)
     }
 }
